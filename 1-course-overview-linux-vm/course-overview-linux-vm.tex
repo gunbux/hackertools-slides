@@ -45,13 +45,15 @@
 \usepackage{minted}
 
 
-\title{Hacker Tools: \\Course Overview, Linux Install Fest, Virtual Machines}
-\author{Julius Putra Tanu Setiaji}
-\date{3 September 2019}
+\title{Hacker Tools: \\Virtual machines and installing Ubuntu}
+\author{Adapted from Julius Putra Tanu Setiaji's 2019 Hacker Tools run}
+\date{1 September 2020}
 
 \begin{document}
 
-\frame[plain]{\titlepage}
+\begin{frame}[plain]
+\titlepage
+\end{frame}
 
 \section{Introduction}
 \subsection{}
@@ -61,7 +63,7 @@
   \begin{center}
     \includegraphics[width=0.5\linewidth]{../NUSHackers}
 
-    \url{http://nushackers.org}
+    \url{https://nushackers.org}
   \end{center}
 
   \begin{center}
@@ -69,30 +71,20 @@
 
     Friday \textbf{Hacks}
 
-    \textbf{Hack} \& Roll
+    \textbf{Hack}\&Roll
 
     \textbf{Hacker} Tools
   \end{center}
 
 \end{frame}
 
-\begin{frame}{About Me}
-  Hi! I'm Julius. My GitHub is \url{https://github.com/indocomsoft}
-
-  A Year 3 Computer Science Undergraduate who loves hacking and building systems.
-
-  I also enjoy Space Exploration, Music Theory and History.
-
-    {\tiny (my favourite games are KSP and EU4 hit me up if you play those too)}
-\end{frame}
-
 \begin{frame}{Required Software}
   \begin{itemize}
     \item Download and install VirtualBox
-    \item Download Ubuntu 19.04 ISO file
+    \item Download Ubuntu 20.04 ISO file
   \end{itemize}
 
-  You can find the link to download both of these in our Facebook event page or our Telegram channel.
+  You can find the link to download both of these on our Facebook event page or in our Telegram channel.
 \end{frame}
 
 \begin{frame}{What is a Hacker?}
@@ -106,35 +98,17 @@
 \end{frame}
 
 \begin{frame}{Hacker Tools}
-  Inspired by \url{https://hacker-tools.github.io/}, organised by SIPB at MIT.
+  Inspired by MIT CSAIL's The Missing Semester of Your CS Education (\url{https://missing.csail.mit.edu/}), which was originally called Hacker Tools.
 
   Learn to make the most of the tools that hackers have been using for decades.
 
   In this class, we'll help you learn how to make the most of tools that productive programmers use.
 \end{frame}
 
-\begin{frame}{Course Overview}
-  \begin{center}
-    \begin{tabularx}{\textwidth}{l|l|X}
-      \textbf{Week} & \textbf{Date \& Time, Venue} & \textbf{Topic}                      \\ \hline
-      4             & 3/9/19 6.30pm, SR1           & Linux Install Fest, Virtual Machine \\ \hline
-      5             & 10/9/19 6.30pm, SR10         & Shell \& Scripting                  \\ \hline
-      6             & 17/9/19 7pm, SR1             & Command Line Environment            \\ \hline
-      8             & 8/10/19 6.30pm, SR1          & Data Wrangling                      \\ \hline
-      9             & 15/10/19 6.30pm, SR1         & Web Browsers \& Privacy             \\ \hline
-      10            & 22/10/19 6pm, SR1            & Editors (vim \& emacs)              \\ \hline
-      11            & 29/10/19 6.30pm, SR1         & OS Customisation                    \\ \hline
-      12            & 5/11/19 6.30pm, SR1          & \LaTeX                              \\ \hline
-    \end{tabularx}
-  \end{center}
-\end{frame}
-
 \section{Linux \& Virtual Machines}
 \subsection{Brief Introduction to Linux \& Unix}
 
 \begin{frame}{What is Linux?}
-  Can that be eaten? \pause
-
   A Unix-like operating system kernel\only<2->{\footnote{The most fundamental part of an operating system -- it is a bridge between other software running on the computer and the hardware}}.
 
   The most popular kernel in the world!
@@ -168,16 +142,16 @@
 \end{frame}
 
 \begin{frame}{Why should I use Linux?}
-  Most development tools are designed around Unix, so the development experience is better!
+  Most development tools are designed for Unix-like systems, so the development experience is better.
 
-  Useful skill: most technology companies use Unix.
+  Useful skill: most technology companies use Unix-like systems as servers.
 
   If you are a computing student, sooner or later you will end up developing for/on a Unix-like platform
 \end{frame}
 
 \subsection{Virtual Machine: What? Why?}
 \begin{frame}{What is a VM?}
-  Virtual machines are simulated computer.
+  A virtual machine is a simulated computer.
 
   You can configure a guest virtual machine with some operating system and configuration and use it without affecting your host environment.
 \end{frame}
@@ -206,9 +180,9 @@
 \begin{frame}{Disadvantages}
   VMs are generally slower than running on bare metal.
 
-  Competes for resource with the host OS.
+  Competes for resources with the host OS.
 
-  May be unsuitable for certain applications, e.g. Games, High Performance Computing.
+  May be unsuitable for certain applications, e.g. games and high-performance computing.
 \end{frame}
 
 \begin{frame}{Examples}
@@ -245,8 +219,8 @@
 
   We are going to use VirtualBox, because:
   \begin{itemize}
-    \item It is FOSS (Free Open Source Software)
-    \item It has a GUI (Graphical User Interface)
+    \item It is FOSS (free, open-source software)
+    \item It has a GUI (graphical user interface)
     \item It is cross-platform
   \end{itemize}
 
@@ -264,7 +238,7 @@
   \begin{center}
     \includegraphics[width=0.8\linewidth]{vb-new}
   \end{center}
-  Use Ubuntu as the name, VirtualBox should detect the type and variation automagically.
+  Use Ubuntu as the name. VirtualBox should detect the type and variation automagically.
 \end{frame}
 
 \begin{frame}{Set amount of memory allocated}
@@ -466,9 +440,9 @@
 
 \subsection{Guest Addons}
 \begin{frame}{Guest Addons}
-  VMs actually provide some software for better integration, e.g. shared clipboard, screen auto-resizing, etc.
+  VMs provide some software for better integration, e.g. shared clipboard, screen auto-resizing, etc.
 
-  In VirtualBox, this is called the Guest Additions.
+  VirtualBox calls them Guest Additions.
 \end{frame}
 
 \begin{frame}{Installing VirtualBox Guest Additions}
@@ -492,10 +466,10 @@
 \begin{frame}
   \frametitle{Talk to us!}
   \begin{itemize}
-    \item \textbf{Feedback form}: \url{https://is.gd/2019ht4}
-    \item \textbf{Upcoming Hacker Tools}:
+    \item \textbf{Feedback}: \url{https://tny.im/2020ht1}
+    \item \textbf{Next Hacker Tools}:
 
-          Shell \& Scripting, SR10, 10th September 2019, 6.30pm
+          Shell and scripting, 8 September 2020, 6.30pm
   \end{itemize}
 \end{frame}
 
