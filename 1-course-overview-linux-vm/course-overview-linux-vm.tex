@@ -382,6 +382,36 @@
   \end{center}
 \end{frame}
 
+\section{Guest Additions}
+\subsection{}
+\begin{frame}{Guest Additions}
+  VMs provide some software for better integration, e.g. shared clipboard, screen auto-resizing, etc.
+
+  VirtualBox calls them Guest Additions.
+\end{frame}
+
+\begin{frame}[fragile]{Installing VirtualBox Guest Additions}
+  Many Linux distributions offer the Guest Additions in their package repositories.
+
+  We will install it using the repositories:
+
+  \begin{minted}{bash}
+  sudo -i
+  apt update
+  apt install virtualbox-guest-utils \
+    virtualbox-guest-x11
+  \end{minted}
+\end{frame}
+
+\begin{frame}{Installing using the ISO}
+  If you install Windows, or some other OS that does not have the Guest Additions
+  in a package repository, then they can be installed via a CD image.
+
+  \menu{Devices > Insert Guest Additions CD Image}
+
+  This will insert the Guest Additions as a virtual CD.
+\end{frame}
+
 \section{Nifty Tricks with VM}
 \subsection{Force shutdown the VM}
 \begin{frame}{Force Shutdown the VM}
@@ -436,21 +466,6 @@
   \mintinline{bash}{sudo rm -rf --no-preserve-root /}
 
   \mintinline{bash}{:(){:|:&};:}
-\end{frame}
-
-\subsection{Guest Addons}
-\begin{frame}{Guest Addons}
-  VMs provide some software for better integration, e.g. shared clipboard, screen auto-resizing, etc.
-
-  VirtualBox calls them Guest Additions.
-\end{frame}
-
-\begin{frame}{Installing VirtualBox Guest Additions}
-  \menu{Devices > Insert Guest Additions CD Image}
-
-  This will insert the Guest Additions as a virtual CD.
-
-  Choose ``Run''
 \end{frame}
 
 \section{Conclusion}
