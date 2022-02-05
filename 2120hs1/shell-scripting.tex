@@ -130,7 +130,7 @@
   \begin{itemize}
     \item What greets you when you open a terminal.
           \includegraphics[width=\linewidth]{shell-prompt}
-    \item Lets your run programs and commands.
+    \item Lets you run programs and commands.
   \end{itemize}
 \end{frame}
 
@@ -218,7 +218,7 @@ echo something
 
 \begin{frame}[fragile]{Flags (2/3)}
   \begin{itemize}
-    \item A double dash \texttt{--} is used in to signify the end of command options, after which only positional parameters are accepted.
+    \item A double dash \texttt{--} is used to signify the end of command options, after which only positional parameters are accepted.
           \begin{itemize}
             \item For example, to create a file called \texttt{-v}, Use \mintinline{bash}{touch -- -v} instead of \mintinline{bash}{touch -v}
             \item For example, to grep a file called \texttt{-v}, \mintinline{bash}{grep pattern -- -v} will work while \mintinline{bash}{grep pattern -v} will not.
